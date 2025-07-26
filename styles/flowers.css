@@ -137,6 +137,32 @@ body {
     padding: 0;
 }
 
+/*planets-lover section style*/
+
+.planets-lover{
+    display: flex;
+    margin: 130px 150px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+}
+.lover-collum{
+    width: 50%;
+}
+
+.lover-collum ul li{
+    margin-top: 20px;
+}
+
+.badge{
+    position: absolute;
+    height: 286px;
+    width: 286px;
+    left: 347px;
+    bottom: 450px;
+}
+
 
 
 
@@ -144,28 +170,34 @@ body {
 @media screen and (max-width: 576px){
     .navbar,
     .banner,
-    .plants
+    .plants,
+    .planets-lover
     {
         margin: 13px 16px;
     }
     .logo img{
         height: 38px;
     }
-    .nav-links{
+    .nav-links,
+    .badge
+    {
         display: none;
     }
     /*banner*/
-    .banner{
+    .banner
+    {
         flex-direction: column-reverse;
         align-items: normal;
-
     }
-    .header-collum{
+    .header-collum,
+    .lover-collum
+    {
         text-align: left;
         width: 100%;    
     }
     .header-collum img,
-    .card img
+    .card img,
+    .lover-collum img
     {
         max-width: 100%;
         height: auto;
@@ -184,7 +216,10 @@ body {
     .btn{
         padding: 19px 30px;
     }
-    
+    /*Planet lover*/
+    .planets-lover{
+        flex-direction: column;
+    }
 
 }
     
