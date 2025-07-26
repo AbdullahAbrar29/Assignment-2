@@ -15,13 +15,23 @@
 }
 
 /* Common style*/
-span{
+.text-clr{
     color: #E95A08;
 }
-p{
+.subtitle{
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
-    margin: 0;
+    margin: 15px 0;
+
+}
+.btn{
+    background-color: #E95A08;
+    font-size: 16px;
+    font-weight: 550;
+    margin: 30px 20px 30px 0;
+    padding: 19px 80px;
+    color: #fff;
+    border: none;
 }
 
 /*navbar style*/
@@ -92,13 +102,50 @@ body {
     margin: 0;
 }
 
+/* Planet section style */
+.plants{
+    margin: 30px 150px;
+}
+.plants-header{
+    text-align: center;
+    padding: 0 125px;
+}
+.planet-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;  
+    text-align: center;
+    gap: 20px;
+}
+
+.img-title{
+    color: #111111;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 30px 0 20px 0;
+}
+.price{
+    color: #111111;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
 /* Mobile resposnive */
 @media screen and (max-width: 576px){
     .navbar,
-    .banner{
+    .banner,
+    .plants
+    {
         margin: 13px 16px;
     }
     .logo img{
@@ -117,11 +164,28 @@ body {
         text-align: left;
         width: 100%;    
     }
-    .header-collum img{
+    .header-collum img,
+    .card img
+    {
         max-width: 100%;
         height: auto;
         margin: 0;
     }
+    /*Planets*/
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 30px;  
+        text-align: center;
+    }
+    .plants-header{
+        padding: 30px;
+    }
+    .btn{
+        padding: 19px 30px;
+    }
+    
+
 }
     
 
